@@ -1,5 +1,13 @@
 # Custom Chatbot Project
 
+""""
+Write an explanation of which dataset you have chosen and why it is appropriate for this task:
+- This chatbot application is made specialized on 'New York food scrap drop off sites'. Customized for a few of the factors such as site_area, operating_hours and what's not permitted.
+- Demonstrates the use of custom dataset with an LLM by using RAG (Retrieval Augmented Generation).
+- I have taken the dataset named "nyc_food_scrap_drop_off_sites.csv" provided in the project workspace under "data" folder.
+- As mentioned here in https://platform.openai.com/docs/models#gpt-3-5-turbo "gpt-3.5-turbo-instruct" has the knowledge cutoff of Sep 2021, hence by using this dataset we could feed latest context to prompts.
+"""
+
 # DATA WRANGLING
 # Load your chosen dataset into a `pandas` dataframe with a column named "text".
 # This column should contain all of your text data, separated into at least 20 rows.
@@ -246,3 +254,7 @@ Original Answer: {initial_answer_1}
 Original Answer: {initial_answer_2}
 \n\nCustom Answer:   {custom_answer_2}
 """)
+
+"""
+Hence, we could see the changes from original answers to the customised ones.
+"""
