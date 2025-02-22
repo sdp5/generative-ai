@@ -28,3 +28,21 @@ Your task is to develop an innovative application named "HomeMatch". This applic
 ##### Listing Presentation:
 
 - Output the personalized listing(s) as a text description of the listing.
+
+## Setup and Run Project
+
+```bash
+virtualenv --python=python3 .venv
+source .venv/bin/activate
+cd <project-directory>/4_Generative-AI-Solutions
+pip install -r requirements.txt
+
+# Once all the dependencies are installed.
+# Add os.environ["OPENAI_API_KEY"] = "YOUR API KEY"
+python3 home_match.py
+
+# This should create property_listing.csv
+# And Chroma SQLiteDB.
+```
+
+See [OUTPUT.md](./OUTPUT.md) for expected output.
